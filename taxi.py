@@ -20,8 +20,8 @@ for row in results:
         brooklyn_count += 1
 print("Number of records for Brooklyn:", brooklyn_count)
 
-
-with open("taxi_zone_output.txt", "w") as output_file:
+output_file_path = "root/taxi_zone_output.txt"
+with open(output_file_path, "w") as output_file:
     output_file.write(f"Total number of records: {datas}\n")
     output_file.write(f"Unique boroughs: {', '.join(boroughs)}\n")
     output_file.write(f"Number of Brooklyn records: {brooklyn_count}\n")
